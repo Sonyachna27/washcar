@@ -1,0 +1,158 @@
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+ul[class],
+ol[class] {
+  list-style: none;
+}
+ul{
+    list-style: none;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+a{
+    width: fit-content;
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+button{
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+/*style */
+
+.container{
+    max-width: 1200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: 50px auto;
+    /* overflow: hidden; */
+}
+.slider-wrapper{
+    position: relative;
+}
+.swiper-container {
+    overflow: hidden; /* Ховаємо зайві частини слайдера */
+    position: relative;
+  }
+  .swiper-slide {
+    width: 313.667px; /* Загальна ширина слайду, включаючи відстань між ними */
+    width: 433.667px;
+    /* margin-right: 40px; Відстань між слайдами */
+    transition: transform 0.3s; /* Анімація переходу */
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Заповнює область картинкою */
+  }
+  
+  /* Стилі для центрального слайду */
+  .swiper-slide.swiper-slide-active {
+    width: 860px; /* Збільшуємо ширину центрального слайду */
+    width: 100%;
+    margin-right: 0; /* Нульова відстань між центральним слайдом і наступним */
+  }
+   .swiper-slide-next,
+   .swiper-slide-prev{
+    opacity: .5;
+  }
+
+
+  .swiper-pagination-bullets.swiper-pagination-bullets {
+    bottom: -55px;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet{
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+}
+.swiper-pagination-bullet-active.swiper-pagination-bullet-active{
+    opacity: 1;
+    background-color: #D22020;
+}
+.button-wrap{
+    position: absolute;
+    top: 50%;
+    left: 327px;
+    max-width: 724px;
+    width: 100%;
+    height: 60px;
+}
+.button-wrap svg{
+    width: 18px;
+    height: 18px;
+}
+.next,
+  .prev{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #D22020;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 21px;
+    border-radius: 50%;
+    /* position: absolute; */
+    top: 45%;
+  }
+  .next{
+    right: 23.5%;
+  }
+  .prev {
+    left: 23.5%;
+}
+  .swiper-button-next::after,
+  .swiper-button-prev::after{
+    content: none;
+  }
+  @media screen and (max-width:990px) {
+    .next{
+        right: 0;
+      }
+      .prev {
+        left: 0;
+    }
+    .swiper-pagination-bullets.swiper-pagination-bullets {
+        bottom: -35px;
+    }
+  }
