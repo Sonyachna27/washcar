@@ -677,6 +677,11 @@ iframe{
   min-width: 40px;
   height: 40px;
 }
+.connect__link .connect__link:nth-child(2) {
+  
+  margin-top: 0;
+
+}
 .connect-wrapper .social__wrapper{
   justify-content: flex-start;
 }
@@ -998,6 +1003,11 @@ margin-bottom: 117px;
   bottom: inherit;
   max-width: 100%;
   width: 100%;
+  border-radius: 0 0 20px 20px;
+}
+.connect__wrap {
+  
+  
 }
 iframe {
   max-height: 600px;
@@ -1026,12 +1036,17 @@ iframe {
     h2{
       font-size: 20px;
     }
+    .about__bottom h3{
+      font-size: 24px;
+    }
     .btn{
       font-size: 14px;
     }
-    .padding-section,
-    .faq-section{
+    .padding-section{
       padding: 70px 0;
+    }
+    .faq-section{
+      padding: 0 0 70px 0;
     }
     .footer {
       padding: 70px 0 23px 0;
@@ -1071,10 +1086,7 @@ iframe {
 .connect__link:nth-child(1) {
   flex-wrap: wrap;
 }
-.connect__link .connect__link:nth-child(2) {
-  margin-left: 50px;
 
-}
 .choose__block {
   gap: 10px;
   padding: 26px;
@@ -1102,5 +1114,8 @@ iframe {
   }
   .tab label {
     font-size: 12px;
+}
+.connect__link .connect__link:nth-child(2) {
+  margin-left: 50px;
 }
   }
