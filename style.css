@@ -291,6 +291,7 @@ margin-bottom: 80px;
 }
 .about-img{
   min-height: 100%;
+  -webkit-appearance: none;
 }
 .about__bottom h3{
   color: var(--red);
