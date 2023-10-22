@@ -135,6 +135,9 @@ h2{
   font-weight: 700;
   text-transform: uppercase;
 }
+p{
+  font-size: 14px;
+}
 .mb-m{
   margin-bottom: 140px;
 }
@@ -586,7 +589,7 @@ margin-bottom: 20px;
   max-height: 0;
   overflow: hidden;
   background: var(--white);
-  border-radius: 0px 0px 30px 30px;
+  border-radius: 10px 10px 30px 30px;
   padding: 0 40px;
   font-size: 14px;
   font-weight: 500;
@@ -594,8 +597,8 @@ margin-bottom: 20px;
 }
 .tab input:checked ~ .tab__content {
   max-height: 100vh;
-  padding: 52.5px 40px 20px 40px;
-  margin-top: -37.5px;
+  padding: 58.5px 40px 21px 47px;
+  margin-top: -58.5px;
 }
 .tab label:hover .tab-plus {
   background: var(--red);
@@ -831,30 +834,28 @@ margin-bottom: 117px;
     max-width: 100%;
     width: 100%;
     z-index: 15;
-    height: 240px;
+    height: 206px;
   }
 
   .header__bottom{
     position: relative;
-    margin-top: 35px;
+    margin-top: 14px;
     width: 100%;
     background: var(--grey);
-    
-    /* padding: 0 20px; */
+    padding: 10px 0;
 }
   
   .header__tel-wrap{
- margin-top: 60px;
+    margin-top: 60px;
     height: 60px;
-    
     max-width: 100%;
 }
   
 .header .social__wrapper{
     position: absolute;
-    top: -187%;
+    top: -210%;
     height: 60px;
-    left: 38%;
+    left: calc(50% - 133px);
     max-width: 100%;
     justify-content: center;
   }
@@ -944,6 +945,12 @@ margin-bottom: 117px;
 
 
   @media screen and (max-width:990px) {
+    h1{
+      font-size: 48px;
+    }
+    h2{
+      font-size: 24px;
+    }
     .next{
         right: 0;
       }
@@ -1006,27 +1013,39 @@ iframe {
     .details__blocks-wrapper,
     .choose__block-wrapper {
       grid-template-columns: 1fr;
+      gap: 30px;
   }
+  
   }
 
   @media screen and (max-width:625px) {
     h1{
-      font-size: 48px;
+      font-size: 32px;
     }
+    .form__title h2,
     h2{
-      font-size: 24px;
+      font-size: 20px;
     }
     .btn{
       font-size: 14px;
     }
-    .padding-section{
+    .padding-section,
+    .faq-section{
       padding: 70px 0;
     }
+    .footer {
+      padding: 70px 0 23px 0;
+  }
+  .foo__top {
+    margin-bottom: 70px;
+}
 
     .tab label {
       padding: 9px 40px 8px 13px;
       font-size: 14px;
       text-wrap: wrap;
+      word-wrap: break-word;
+      gap: 10px;
   }
   .tab-span {
     padding: 5px 10px;
@@ -1038,4 +1057,50 @@ iframe {
     height: 30px;
     
   }
+  .tab input:checked ~ .tab__content {
+    padding: 50.5px 40px 21px 47px;
+    margin-top: -34.5px;
+}
+  .connect__wrap {
+    padding: 20px;
+}
+.connect__link{
+  font-size: 14px;
+
+}
+.connect__link:nth-child(1) {
+  flex-wrap: wrap;
+}
+.connect__link .connect__link:nth-child(2) {
+  margin-left: 50px;
+
+}
+.choose__block {
+  gap: 10px;
+  padding: 26px;
+}
+.choose__block h3 {
+  font-size: 15px;
+}
+.form__title span {
+  font-size: 14px;
+}
+.form__wrap{
+  padding: 20px;
+}
+.about__text-wrapper p:nth-child(5) {
+  font-size: 18px;
+}
+.details__block {
+  padding: 20px 30px;
+}
+  }
+  @media screen and (max-width:360px) {
+    .tab input:checked ~ .tab__content {
+      padding: 50.5px 40px 21px 47px;
+      margin-top: -45.5px;
+  }
+  .tab label {
+    font-size: 12px;
+}
   }
