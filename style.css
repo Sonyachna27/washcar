@@ -107,7 +107,9 @@ button{
     margin: 0 auto;
     width: 100%;
 }
-
+a{
+  color: inherit;
+}
 body{
   font-family: 'Montserrat';
   font-size: 14px;
@@ -146,6 +148,9 @@ p{
 }
 .bg-img{
   min-height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+  
 }
 .btn{
   display: flex;
@@ -189,6 +194,10 @@ p{
 .header__tel{
   max-width: 316px;
   margin: 0 auto;
+  font-size: 14px;
+}
+.header__tel:hover{
+  color: var(--red);
 }
 .header__bottom{
   display: flex;
@@ -197,7 +206,8 @@ p{
   padding: 18px 0;
 
 }
-.header__nav a:hover{
+.header__nav a:hover,
+.footer a:hover{
   color: var(--red);
   transition: all .3s ;
 }
@@ -332,7 +342,7 @@ display: flex;
 justify-content: space-between;
 flex-direction: column;
 }
-.details__title-wrap{
+.details__top-wrap{
   margin-bottom: 40px;
 }
 .ellipse__title{
@@ -519,7 +529,7 @@ margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  padding: 40px;
+  padding: 38.5px 40px;
   border-radius: 10px;
   border: 1px solid var(--white);
 }
@@ -552,7 +562,7 @@ margin-bottom: 20px;
   align-items: center;
   gap: 20px;
   cursor: pointer;
-  padding: 20px 80px 20px 40px;
+  padding: 18px 80px 18px 40px;
   border-radius: 500px;
   background: var(--grey-white);
   position: relative;
@@ -627,18 +637,12 @@ margin-bottom: 20px;
   transition: all .3s;
   border-color: var(--red);
 }
-
-
-
-
 .faq-section{
   padding: 0 0 140px 0;
 }
-
 .connect-section{
   position: relative;
 }
-
 iframe{
   min-height: 700px;
   padding: 0;
@@ -841,7 +845,6 @@ margin-bottom: 117px;
   text-transform: lowercase;
 }
 
-
 @media screen and (max-width: 1023px) {
  
   .header{
@@ -960,7 +963,6 @@ margin-bottom: 117px;
 
   }
 
-
   @media screen and (max-width:990px) {
     h1{
       font-size: 48px;
@@ -1037,7 +1039,6 @@ iframe {
       grid-template-columns: 1fr;
       gap: 30px;
   }
-  
   }
 
   @media screen and (max-width: 650px) {
@@ -1156,7 +1157,6 @@ iframe {
 
   }
 
-
   @media (pointer:coarse){
     .btn:hover{
       background-color: none;
@@ -1170,26 +1170,9 @@ iframe {
 form .btn:hover{
   color: var(--red);
 }
-.tab label:hover .tab-plus {
-  background: var(--red);
-  border-color: var(--red);
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.tab label:hover .tab-plus svg path {
-  stroke: var(--white);
-}
-.tab label:hover > .tab-span {
-  color: var(--white);
-  background: var(--red);
-  transition: all .3s;
-  border-color: var(--red);
-}
 .form__wrap form input[type=submit]:hover{
-  background: transparent;
-  color: var(--red);
-  border-color: var(--red);
+  background: none;
+  color: none;
+  border-color: none;
 }
     }
