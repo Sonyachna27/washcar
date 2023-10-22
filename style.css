@@ -303,6 +303,7 @@ margin-bottom: 80px;
   -webkit-appearance: none;
   object-fit: cover;
   height: auto;
+  height: 100%;
 }
 .about__bottom h3{
   color: var(--red);
