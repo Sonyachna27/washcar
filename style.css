@@ -144,7 +144,9 @@ p{
 .padding-section{
   padding: 140px 0;
 }
-
+.bg-img{
+  min-height: 100%;
+}
 .btn{
   display: flex;
   width: 100%;
@@ -286,6 +288,9 @@ margin-bottom: 80px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
+}
+.about-img{
+  min-height: 100%;
 }
 .about__bottom h3{
   color: var(--red);
@@ -528,7 +533,7 @@ margin-bottom: 20px;
 .tabs {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 10px; 
 }
 .tab {
   position: relative;
@@ -588,17 +593,19 @@ margin-bottom: 20px;
 .tab__content {
   max-height: 0;
   overflow: hidden;
-  background: var(--white);
-  border-radius: 10px 10px 30px 30px;
-  padding: 0 40px;
-  font-size: 14px;
-  font-weight: 500;
+  
   transition: all .3s;
+  margin-top: 0;
 }
 .tab input:checked ~ .tab__content {
   max-height: 100vh;
   padding: 58.5px 40px 21px 47px;
   margin-top: -58.5px;
+  background: var(--white);
+  border-radius: 19px 19px 30px 30px; 
+  /* padding: 0 40px; */
+  font-size: 14px;
+  font-weight: 500;
 }
 .tab label:hover .tab-plus {
   background: var(--red);
@@ -678,9 +685,7 @@ iframe{
   height: 40px;
 }
 .connect__link .connect__link:nth-child(2) {
-  
   margin-top: 0;
-
 }
 .connect-wrapper .social__wrapper{
   justify-content: flex-start;
@@ -914,7 +919,7 @@ margin-bottom: 117px;
     .header__nav{
         position: fixed;
         left: 0;
-        top: 233px;
+        top: 200px;
         width: 100%;
         height: 100%;
         background: var(--grey);
@@ -1016,7 +1021,7 @@ iframe {
 }
   }
 
-  @media screen and (max-width: 760px){
+  @media screen and (max-width: 790px){
     .main__text-wrapper,
     .about__wrapper,
     .title__wrap,
@@ -1028,12 +1033,20 @@ iframe {
   
   }
 
+  @media screen and (max-width: 650px) {
+    .tab input:checked ~ .tab__content {
+      
+      padding: 78.5px 40px 21px 47px;
+      margin-top: -66.5px;
+  }
+  }
   @media screen and (max-width:625px) {
     h1{
       font-size: 32px;
     }
     .form__title h2,
-    h2{
+    h2,
+    .about h2 {
       font-size: 20px;
     }
     .about__bottom h3{
@@ -1045,15 +1058,21 @@ iframe {
     .padding-section{
       padding: 70px 0;
     }
+    .mb-m,
+    .foo__top{
+      margin-bottom: 70px;
+    }
     .faq-section{
       padding: 0 0 70px 0;
     }
     .footer {
       padding: 70px 0 23px 0;
   }
-  .foo__top {
-    margin-bottom: 70px;
+  .main-wrapper {
+    padding-top: 275px;
+    padding-bottom: 100px;
 }
+  
 
     .tab label {
       padding: 9px 40px 8px 13px;
@@ -1108,6 +1127,9 @@ iframe {
 }
   }
   @media screen and (max-width:360px) {
+    .main-wrapper {
+      padding-bottom: 70px;
+  }
     .tab input:checked ~ .tab__content {
       padding: 50.5px 40px 21px 47px;
       margin-top: -45.5px;
@@ -1118,4 +1140,12 @@ iframe {
 .connect__link .connect__link:nth-child(2) {
   margin-left: 50px;
 }
+.next, 
+.prev {
+  width: 46px;
+  height: 46px;
+  padding: 14px;
+}
+
+
   }
