@@ -593,24 +593,29 @@ margin-bottom: 20px;
 .tab__content {
   max-height: 0;
   overflow: hidden;
-  
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
   margin-top: 0;
 }
 .tab input:checked ~ .tab__content {
   max-height: 100vh;
-  padding: 58.5px 40px 21px 47px;
+  padding: 75.5px 40px 21px 47px;
   margin-top: -58.5px;
-  background: var(--white);
-  border-radius: 19px 19px 30px 30px; 
-  /* padding: 0 40px; */
+  background: var(--black);
+  color: var(--grey-white);
+  border-radius: 19px 19px 30px 30px;
   font-size: 14px;
   font-weight: 500;
 }
 .tab label:hover .tab-plus {
   background: var(--red);
   border-color: var(--red);
-  transition: all .33s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .tab label:hover .tab-plus svg path {
   stroke: var(--white);
@@ -768,6 +773,7 @@ text-transform: lowercase;
   cursor: pointer;
   border-color: transparent;
   padding: 15px 20px;
+  -webkit-appearance: none;
 }
 .form__wrap form input[type=submit]:hover{
   background: transparent;
