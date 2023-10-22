@@ -282,7 +282,6 @@ margin-bottom: 80px;
   position: absolute;
   bottom: -40px;
   left: 0;
-
 }
 .about__bottom{
   display: grid;
@@ -292,6 +291,7 @@ margin-bottom: 80px;
 .about-img{
   min-height: 100%;
   -webkit-appearance: none;
+  object-fit: cover;
 }
 .about__bottom h3{
   color: var(--red);
@@ -1079,7 +1079,6 @@ iframe {
     padding-top: 275px;
     padding-bottom: 100px;
 }
-  
 
     .tab label {
       padding: 9px 40px 8px 13px;
@@ -1156,3 +1155,41 @@ iframe {
 
 
   }
+
+
+  @media (pointer:coarse){
+    .btn:hover{
+      background-color: none;
+      border-color: none;
+    }
+    .header__nav a:hover{
+      color: none;
+      transition: all .3s ;
+    }
+    .main__text .btn:hover,
+form .btn:hover{
+  color: var(--red);
+}
+.tab label:hover .tab-plus {
+  background: var(--red);
+  border-color: var(--red);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.tab label:hover .tab-plus svg path {
+  stroke: var(--white);
+}
+.tab label:hover > .tab-span {
+  color: var(--white);
+  background: var(--red);
+  transition: all .3s;
+  border-color: var(--red);
+}
+.form__wrap form input[type=submit]:hover{
+  background: transparent;
+  color: var(--red);
+  border-color: var(--red);
+}
+    }
