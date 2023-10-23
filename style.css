@@ -1009,8 +1009,6 @@ margin-bottom: 117px;
 }
 
 .connect-section {
-  display: flex;
-  flex-direction: column;
   position: relative;
     display: flex;
     flex-direction: column;
@@ -1021,6 +1019,7 @@ margin-bottom: 117px;
   max-width: 100%;
   width: 100%;
   border-radius: 0 0 20px 20px;
+  margin-bottom: 20px;
 }
 
 iframe {
@@ -1089,7 +1088,6 @@ iframe {
 }
 .header__nav ul{
   font-size: 16px;
-  /* padding: 60px 20px; */
 }
 .next, .prev {
   display: none;
@@ -1126,9 +1124,7 @@ iframe {
   max-height: 320px;
   min-height: 320px;
 }
-.connect-wrapper{
- margin-bottom: 20px;
-}
+
   .connect__wrap {
     padding: 20px;
     max-height: 320px;
